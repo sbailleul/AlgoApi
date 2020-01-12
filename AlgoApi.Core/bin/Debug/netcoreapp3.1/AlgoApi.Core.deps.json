@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AlgoApi.Core/1.0.0": {
+        "dependencies": {
+          "AlgoApi.Data": "1.0.0"
+        },
+        "runtime": {
+          "AlgoApi.Core.dll": {}
+        }
+      },
+      "AlgoApi.Data/1.0.0": {
+        "runtime": {
+          "AlgoApi.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AlgoApi.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AlgoApi.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

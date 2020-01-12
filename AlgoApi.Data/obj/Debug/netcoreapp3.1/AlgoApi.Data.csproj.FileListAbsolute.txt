@@ -1,0 +1,8 @@
+C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi\AlgoApi.Data\bin\Debug\netcoreapp3.1\AlgoApi.Data.deps.json
+C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi\AlgoApi.Data\bin\Debug\netcoreapp3.1\AlgoApi.Data.dll
+C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi\AlgoApi.Data\bin\Debug\netcoreapp3.1\AlgoApi.Data.pdb
+C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi\AlgoApi.Data\obj\Debug\netcoreapp3.1\AlgoApi.Data.csprojAssemblyReference.cache
+C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi\AlgoApi.Data\obj\Debug\netcoreapp3.1\AlgoApi.Data.AssemblyInfoInputs.cache
+C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi\AlgoApi.Data\obj\Debug\netcoreapp3.1\AlgoApi.Data.AssemblyInfo.cs
+C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi\AlgoApi.Data\obj\Debug\netcoreapp3.1\AlgoApi.Data.dll
+C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi\AlgoApi.Data\obj\Debug\netcoreapp3.1\AlgoApi.Data.pdb
