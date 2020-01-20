@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace AlgoApi.Models.Graph
+﻿namespace AlgoApi.Models.Graph
 {
     public class Node
     {

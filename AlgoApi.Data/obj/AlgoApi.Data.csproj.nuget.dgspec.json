@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sbailleu\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi\\AlgoApi.Data\\AlgoApi.Data.csproj": {}
+    "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Data\\AlgoApi.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sbailleu\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi\\AlgoApi.Data\\AlgoApi.Data.csproj": {
+    "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Data\\AlgoApi.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sbailleu\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi\\AlgoApi.Data\\AlgoApi.Data.csproj",
+        "projectUniqueName": "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Data\\AlgoApi.Data.csproj",
         "projectName": "AlgoApi.Data",
-        "projectPath": "C:\\Users\\sbailleu\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi\\AlgoApi.Data\\AlgoApi.Data.csproj",
-        "packagesPath": "C:\\Users\\sbailleu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sbailleu\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi\\AlgoApi.Data\\obj\\",
+        "projectPath": "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Data\\AlgoApi.Data.csproj",
+        "packagesPath": "C:\\Users\\baill\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sbailleu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\baill\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

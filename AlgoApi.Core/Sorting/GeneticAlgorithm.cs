@@ -1,47 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using AlgoApi.Core.ListHandling;
-using AlgoApi.Core.ReferenceHandling;
-using AlgoApi.Core.Sorting.Interfaces;
-using AlgoApi.Core.Sorting.PopulationHandler;
-using AlgoApi.Models;
+﻿using System.Linq;
+using AlgoApi.Core.Sorting.PopulationHandling;
+using AlgoApi.Core.VectorHandling;
 
 namespace AlgoApi.Core.Sorting
 {
-    public class GeneticAlgorithm<T> : Sorter<T>, IGeneticAlgorithm<T>
+    public class GeneticAlgorithm<T> : Sorter<T>
     {
-
-        private IPopulationHandler<T> PopulationHandler { get; set; } = new PopulationHandler<T>();
-    
-
-        public T[][] SortMatrix(T[][] matrix)
+        private PositionPopulationHandler<T> PositionPopulationHandler { get; } = new PositionPopulationHandler<T>();
+        
+        public override T[][] SortMatrix(T[][] matrix)
         {
             const int popSize = 200;
             const float breederRation = 0.2f;
             const float mutationRate = 0.1f;
             const int breedersCnt = (int) (popSize * breederRation);
-            var testVectors = VectorHandler.InitVectors(matrix);
-            var pop = PopulationHandler.GeneratePopulation(testVectors, popSize);
+            var testVectors = VectorUtils<T>.InitVectors(matrix);
+            var pop = PositionPopulationHandler.GeneratePopulation(testVectors, popSize);
 
             while (true)
             {
-                var scoredPop = PopulationHandler.EvaluatePopulation(pop, testVectors);
-                var breeders = PopulationHandler.SelectBreeders(scoredPop, breedersCnt);
+                var scoredPop = PositionPopulationHandler.EvaluatePopulation(pop, testVectors);
+                var breeders = PositionPopulationHandler.SelectBreeders(scoredPop, breedersCnt);
                 var bestEntity = breeders.First();
-                VectorHandler.SetPositionsToVectors(bestEntity, testVectors);
+                VectorUtils<T>.SetPositionsToVectors(bestEntity, testVectors);
 
                 if (ErrorTester.GetError(testVectors) == 0) break;
 
-                var newPop = PopulationHandler.CrossBreed(breeders, popSize);
+                var newPop = PositionPopulationHandler.CrossBreed(breeders, popSize);
 
-                PopulationHandler.MutatePop(newPop, mutationRate);
+                PositionPopulationHandler.MutatePop(newPop, mutationRate);
 
                 pop = newPop;
             }
 
-            return VectorHandler.ConvertVectorsToMatrix(testVectors);
+            return VectorUtils<T>.ConvertVectorsToMatrix(testVectors);
         }
-
     }
 }

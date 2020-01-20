@@ -9,6 +9,7 @@
       "AlgoApi.Test/1.0.0": {
         "dependencies": {
           "AlgoApi.API": "1.0.0",
+          "AlgoApi.Core": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.2.0",
           "NUnit3TestAdapter": "3.15.1",
           "NUnit": "3.12.0"
@@ -1262,12 +1263,37 @@
       },
       "AlgoApi.API/1.0.0": {
         "dependencies": {
+          "AlgoApi.Core": "1.0.0",
+          "AlgoApi.Repo": "1.0.0",
           "EntityFramework": "6.4.0",
           "Microsoft.EntityFrameworkCore": "3.1.0",
           "Microsoft.EntityFrameworkCore.InMemory": "3.1.0"
         },
         "runtime": {
           "AlgoApi.API.dll": {}
+        }
+      },
+      "AlgoApi.Core/1.0.0": {
+        "dependencies": {
+          "AlgoApi.Data": "1.0.0"
+        },
+        "runtime": {
+          "AlgoApi.Core.dll": {}
+        }
+      },
+      "AlgoApi.Data/1.0.0": {
+        "runtime": {
+          "AlgoApi.Data.dll": {}
+        }
+      },
+      "AlgoApi.Repo/1.0.0": {
+        "dependencies": {
+          "AlgoApi.Data": "1.0.0",
+          "EntityFramework": "6.4.0",
+          "Microsoft.EntityFrameworkCore": "3.1.0"
+        },
+        "runtime": {
+          "AlgoApi.Repo.dll": {}
         }
       }
     }
@@ -2021,6 +2047,21 @@
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
     "AlgoApi.API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AlgoApi.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AlgoApi.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AlgoApi.Repo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

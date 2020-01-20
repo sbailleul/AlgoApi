@@ -11,11 +11,9 @@ namespace AlgoApi.API.Controllers
     {
         [Route("[action]")]
         [HttpGet]
-        public ActionResult<List<string[]>> RandomMatrix([FromServices] IMatrixHandler matrixHandler,
-            [FromQuery(Name = "repetition")] int repetition, [FromQuery(Name = "values")] string[] values)
+        public ActionResult<List<string[]>> RandomMatrix([FromQuery(Name = "repetition")] int repetition, [FromQuery(Name = "values")] string[] values)
         {
-            return matrixHandler.GetRandomMatrixOfEquitableRepeatedValues(repetition, values).ToList();
-            
+            return MatrixUtils.GetRandomMatrixOfEquitableRepeatedValues(repetition, values).ToList();
         }
     }
 }

@@ -17,11 +17,11 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "TodoApi": {
+    "AlgoApi": {
       "commandName": "Project",
       "launchBrowser": false,
-      "launchUrl": "weatherforecast",
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "launchUrl": "algo-api",
+      "applicationUrl": "https://localhost:5001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

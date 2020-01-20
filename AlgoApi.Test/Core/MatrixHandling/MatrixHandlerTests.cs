@@ -1,50 +1,49 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using AlgoApi.Core.MatrixGenerating;
 using AlgoApi.Core.MatrixHandling;
 using NUnit.Framework;
 
-namespace AlgoApi.Test
+namespace AlgoApi.Test.Core.MatrixHandling
 {
     [TestFixture]
     public class MatrixHandlerTests
     {
         [Test]
-        public void GetRandomMatrixOfEquitableRepeatedValues()
+        public void Get4DMatrixMask()
         {
-            var matrixHandler = new MatrixHandler();
-            var list = Enumerable.Range(0, 3).ToArray();
-            var matrix1 = matrixHandler.GetRandomMatrixOfEquitableRepeatedValues(5, list);
-            var matrix2 = matrixHandler.GetRandomMatrixOfEquitableRepeatedValues(5, list);
-            Assert.That(matrix1, Is.Not.EquivalentTo(matrix2));
+            var matrixHandler = new Matrix4DGenerator();
+            var matrix = matrixHandler.GetMatrix(2);
+            var expectedMatrix = new[]
+            {
+                new[] {-2, 0},
+                new[] {2, 0},
+                new[] {0, -2},
+                new[] {0, 2}
+            };
+
+            Assert.True(Enumerable.Range(0, 4).All(i => matrix[i].SequenceEqual(expectedMatrix[i])));
         }
-
-        [Test]
-        public void GetRandomMatrixOfEquitableRepeatedValuesWithBadSize()
-        {
-            var matrixHandler = new MatrixHandler();
-            var list = Enumerable.Range(0, 3).ToArray();
-
-            Assert.Throws<ArgumentOutOfRangeException>(() =>
-                matrixHandler.GetRandomMatrixOfEquitableRepeatedValues(-1, list));
-        }
-
-        [Test]
-        public void GetMatrixMask()
-        {
-                var matrixHandler = new MatrixHandler();
-                var matrix = matrixHandler.GetMatrixMask(2);
-                var expectedMatrix = new []
-                {
-                    new[]{-2, 0},
-                    new[]{2, 0},
-                    new[]{0, -2},
-                    new[]{0, 2}
-                }; 
-            
-                Assert.True(Enumerable.Range(0,4).All(i => matrix[i].SequenceEqual(expectedMatrix[i])));
-        }
-
         
+        [Test]
+        public void Get8DMatrixMask()
+        {
+            var matrixHandler = new Matrix8DGenerator();
+            var matrix = matrixHandler.GetMatrix(2);
+            var expectedMatrix = new[]
+            {
+                new[] {2 * -1, 2*-1},
+                new[] {2 * -1, 2},
+                new[] {2, 2*-1},
+                new[] {2, 2},
+                new[] {2 * -1, 0},
+                new[] {2, 0},
+                new[] {0, 2 * -1},
+                new[] {0, 2}
+            };
+
+            Assert.True(Enumerable.Range(0, 8).All(i => matrix[i].SequenceEqual(expectedMatrix[i])));
+        }
+
     }
 }

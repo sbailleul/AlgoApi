@@ -7,6 +7,7 @@ namespace AlgoApi.Core.NodeHandling
 {
     public abstract class NodeHandler
     {
+        public abstract void InitNodes(out List<Node> doneNodes, out List<Node> nodes, int[][] matrix);
         public Node GetMinimalCostNode(List<Node> nodes, List<Node> doneNodes)
         {
             var min = nodes.First();
@@ -43,6 +44,5 @@ namespace AlgoApi.Core.NodeHandling
             var startNode = nodes.FirstOrDefault(node => node.Position.SequenceEqual(start));
             if (startNode != null) startNode.Cost = 0;
         }
-
     }
 }

@@ -8,14 +8,10 @@ namespace AlgoApi.Core.Sorting
     {
         protected Sorter()
         {
-            VectorHandler = new VectorHandler<T>();
-            RandGenerator = new Random();
             ErrorTester = new YPositionError();
         }
 
-        protected Random RandGenerator { get; set; }
-
-        protected IVectorHandler<T> VectorHandler { get; set; }
+        public abstract T[][] SortMatrix(T[][] matrix);
         protected IErrorTester ErrorTester { get; set; }
     }
 }

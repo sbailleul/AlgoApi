@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace AlgoApi.Models
+﻿namespace AlgoApi.Models
 {
     public class TagVector<T>
     {

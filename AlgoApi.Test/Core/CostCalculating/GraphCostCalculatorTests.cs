@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using AlgoApi.Core.NodeHandling;
+﻿using AlgoApi.Core.CostCalculating;
 using NUnit.Framework;
 
 namespace AlgoApi.Test.Core.CostCalculating
@@ -12,7 +11,6 @@ namespace AlgoApi.Test.Core.CostCalculating
         {
             var costCalculator = new GraphCostCalculator();
             // var matrix = Enumerable.Range(0, 2).Select(i => Enumerable.Range());
-
         }
     }
 }

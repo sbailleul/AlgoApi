@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\sbailleu\.nuget\packages\microsoft.net.test.sdk\16.2.0\build\netcoreapp1.0" t="Include">
+    <e p="C:\Users\baill\.nuget\packages\microsoft.net.test.sdk\16.2.0\build\netcoreapp1.0" t="Include">
       <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
     </e>
-    <e p="C:\Users\sbailleu\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.api.dll" t="Include" />
-    <e p="C:\Users\sbailleu\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.dll" t="Include" />
-    <e p="C:\Users\sbailleu\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.dll" t="Include" />
-    <e p="C:\Users\sbailleu\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.pdb" t="Include" />
-    <e p="C:\Users\sbailleu\.Rider2019.3\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\sbailleu\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\sbailleu\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_AlgoApi.-1211449004.00" t="ExcludeRecursive" />
-    <e p="C:\Users\sbailleu\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\AlgoApi" t="IncludeFlat">
+    <e p="C:\Users\baill\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.api.dll" t="Include" />
+    <e p="C:\Users\baill\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.dll" t="Include" />
+    <e p="C:\Users\baill\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\baill\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="C:\Users\baill\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\baill\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\baill\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_AlgoApi.-848080166.00" t="ExcludeRecursive" />
+    <e p="C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi" t="IncludeFlat">
       <e p="AlgoApi.API" t="IncludeRecursive">
         <e p="AlgoApi.API.csproj" t="IncludeRecursive" />
         <e p="appsettings.Development.json" t="Include" />
@@ -43,32 +43,29 @@
       <e p="AlgoApi.Core" t="IncludeRecursive">
         <e p="AlgoApi.Core.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Builders" t="Include">
+          <e p="CostCalculatorBuilder.cs" t="Include" />
+        </e>
         <e p="CostCalculating" t="Include">
           <e p="GraphCostCalculator.cs" t="Include" />
           <e p="GridCostCalculator.cs" t="Include" />
-          <e p="IGraphCostCalculator.cs" t="Include" />
-          <e p="IGridCostCalculator.cs" t="Include" />
+          <e p="ICostCalculator.cs" t="Include" />
         </e>
-        <e p="EnumerableHandling" t="Include">
-          <e p="ArrayStrategyByIndex.cs" t="Include" />
-          <e p="EnumerableHandler.cs" t="Include" />
-          <e p="IEnumerableStrategyByElement.cs" t="Include" />
-          <e p="IEnumerableStrategyByIndex.cs" t="Include" />
-          <e p="ListStrategyByElement.cs" t="Include" />
-          <e p="ListStrategyByIndex.cs" t="Include" />
+        <e p="HeuristicGridHandling" t="Include">
+          <e p="ChebyshevDistance.cs" t="Include" />
+          <e p="DiagonalDistance.cs" t="Include" />
+          <e p="HeuristicGridDistance.cs" t="Include" />
+          <e p="ManhattanGridDistance.cs" t="Include" />
+          <e p="OctileDistance.cs" t="Include" />
         </e>
-        <e p="HeuristicHandling" t="Include">
-          <e p="HeuristicCalculator.cs" t="Include" />
-          <e p="IHeuristicCalculator.cs" t="Include" />
-        </e>
-        <e p="MatrixHandling" t="Include">
-          <e p="IMatrixHandler.cs" t="Include" />
-          <e p="MatrixHandler.cs" t="Include" />
+        <e p="MatrixGenerating" t="Include">
+          <e p="IMatrixGenerator.cs" t="Include" />
+          <e p="Matrix4DGenerator.cs" t="Include" />
+          <e p="Matrix8DGenerator.cs" t="Include" />
         </e>
         <e p="NodeHandling" t="Include">
           <e p="GraphNodeHandler.cs" t="Include" />
           <e p="GridNodeHandler.cs" t="Include" />
-          <e p="INodeHandler.cs" t="Include" />
           <e p="NodeHandler.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -81,16 +78,15 @@
         <e p="PathFinding" t="Include">
           <e p="AStar.cs" t="Include" />
           <e p="Dijkstra.cs" t="Include" />
-          <e p="Interfaces" t="Include">
-            <e p="IAStar.cs" t="Include" />
-            <e p="IDijkstra.cs" t="Include" />
-            <e p="IPathFinder.cs" t="Include" />
-          </e>
           <e p="PathFinder.cs" t="Include" />
         </e>
         <e p="ReferenceHandling" t="Include">
           <e p="IReferenceHandler.cs" t="Include" />
           <e p="ReferenceHandler.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="PathFinderService.cs" t="Include" />
+          <e p="SorterService.cs" t="Include" />
         </e>
         <e p="Sorting" t="Include">
           <e p="ErrorTesting" t="Include">
@@ -98,20 +94,13 @@
             <e p="YPositionError.cs" t="Include" />
           </e>
           <e p="GeneticAlgorithm.cs" t="Include" />
-          <e p="Interfaces" t="Include">
-            <e p="IGeneticAlgorithm.cs" t="Include" />
-            <e p="INaiveSearch.cs" t="Include" />
-            <e p="ISimulatedAnnealing.cs" t="Include" />
-            <e p="ISorter.cs" t="Include" />
-          </e>
           <e p="NaiveSearch.cs" t="Include" />
           <e p="NeighbourTesting" t="Include">
             <e p="CrossNeighbourTester.cs" t="Include" />
-            <e p="INeighbourTestter.cs" t="Include" />
+            <e p="INeighbourTester.cs" t="Include" />
           </e>
           <e p="PopulationHandling" t="Include">
-            <e p="IPopulationHandler.cs" t="Include" />
-            <e p="PopulationHandler.cs" t="Include" />
+            <e p="PositionPopulationHandler.cs" t="Include" />
           </e>
           <e p="SimulatedAnnealing.cs" t="Include" />
           <e p="Sorter.cs" t="Include" />
@@ -121,17 +110,24 @@
           <e p="ITemperatureUpdater.cs" t="Include" />
           <e p="LinearUpdater.cs" t="Include" />
         </e>
-        <e p="VectorHandling" t="Include">
-          <e p="IVectorHandler.cs" t="Include" />
-          <e p="VectorHandler.cs" t="Include" />
+        <e p="Utils" t="Include">
+          <e p="EnumerableUtils" t="Include">
+            <e p="ArrayByIndex.cs" t="Include" />
+            <e p="EnumerableHandler.cs" t="Include" />
+            <e p="ListByElement.cs" t="Include" />
+            <e p="ListByIndex.cs" t="Include" />
+          </e>
+          <e p="HeuristicUtils.cs" t="Include" />
+          <e p="MatrixUtils.cs" t="Include" />
+          <e p="VectorUtils.cs" t="Include" />
         </e>
       </e>
       <e p="AlgoApi.Data" t="IncludeRecursive">
         <e p="AlgoApi.Data.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Graph" t="Include">
-          <e p="GraphRequest.cs" t="Include" />
           <e p="Node.cs" t="Include" />
+          <e p="ShortestPathRequest.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -143,37 +139,6 @@
         <e p="SortRequest.cs" t="Include" />
         <e p="TagVector.cs" t="Include" />
         <e p="TodoItem.cs" t="Include" />
-      </e>
-      <e p="AlgoApi.LanguageTest" t="IncludeRecursive">
-        <e p="AlgoApi.LanguageTest.csproj" t="IncludeRecursive" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="EnumerableTests" t="Include">
-          <e p="ArrayTests.cs" t="Include" />
-          <e p="DictionariesTests.cs" t="Include" />
-          <e p="IEnumerableTests.cs" t="Include" />
-          <e p="ISetTests.cs" t="Include" />
-        </e>
-        <e p="EventProgrammation" t="Include">
-          <e p="EventsTests.cs" t="Include" />
-        </e>
-        <e p="ExtendedMethods" t="Include">
-          <e p="ExtendedTests.cs" t="Include" />
-        </e>
-        <e p="Inheritence" t="Include">
-          <e p="VirtualTests.cs" t="Include" />
-        </e>
-        <e p="LanguageTests.cs" t="Include" />
-        <e p="Nullable" t="Include">
-          <e p="NullOperators.cs" t="Include" />
-        </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="AlgoApi.LanguageTest.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="StringList.cs" t="Include" />
       </e>
       <e p="AlgoApi.Repo" t="IncludeRecursive">
         <e p="AlgoApi.Repo.csproj" t="IncludeRecursive" />
@@ -193,21 +158,21 @@
         <e p="AlgoApi.Test.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Core" t="Include">
+          <e p="Builders" t="Include" />
           <e p="CostCalculating" t="Include">
             <e p="GraphCostCalculatorTests.cs" t="Include" />
           </e>
           <e p="CostCalculator.cs" t="Include" />
-          <e p="EnumerableHandling" t="Include">
-            <e p="ListStrategyByIndexTests.cs" t="Include" />
-          </e>
           <e p="HeuristicHandling" t="Include">
-            <e p="HeuristicCalculatorTest.cs" t="Include" />
+            <e p="HeuristicGridDistanceTests.cs" t="Include" />
           </e>
           <e p="MatrixHandling" t="Include">
             <e p="MatrixHandlerTests.cs" t="Include" />
           </e>
           <e p="NodeHandling" t="Include">
             <e p="GraphNodeHandlerTests.cs" t="Include" />
+            <e p="GridNodeHandlerTests.cs" t="Include" />
+            <e p="NodeHandlerTests.cs" t="Include" />
           </e>
           <e p="PathFinding" t="Include">
             <e p="PathFinderTests.cs" t="Include" />
@@ -225,9 +190,16 @@
               <e p="PopulationHandlerTests.cs" t="Include" />
             </e>
           </e>
-          <e p="TemperatureHandling" t="Include" />
-          <e p="VectorHandling" t="Include">
-            <e p="VectorHandlerTests.cs" t="Include" />
+          <e p="TemperatureUpdating" t="Include">
+            <e p="ITemperatureUpdaterTests.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="EnumerableUtils" t="Include">
+              <e p="ListByIndexTests.cs" t="Include" />
+            </e>
+            <e p="HeuristicUtilsTests.cs" t="Include" />
+            <e p="MatrixUtilsTests.cs" t="Include" />
+            <e p="VectorUtilsTests.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -237,6 +209,47 @@
             </e>
           </e>
         </e>
+      </e>
+      <e p="LanguageTests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DesignPatterns" t="Include">
+          <e p="DependencyInjection.cs" t="Include" />
+          <e p="Injector.cs" t="Include" />
+          <e p="SingletonTests.cs" t="Include" />
+        </e>
+        <e p="EnumerableTests" t="Include">
+          <e p="ArrayTests.cs" t="Include" />
+          <e p="DictionariesTests.cs" t="Include" />
+          <e p="IEnumerableTests.cs" t="Include" />
+          <e p="ISetTests.cs" t="Include" />
+        </e>
+        <e p="EventProgrammation" t="Include">
+          <e p="EventsTests.cs" t="Include" />
+        </e>
+        <e p="ExtendedMethods" t="Include">
+          <e p="ExtendedTests.cs" t="Include" />
+        </e>
+        <e p="GenericTests.cs" t="Include" />
+        <e p="Inheritence" t="Include">
+          <e p="VirtualTests.cs" t="Include" />
+        </e>
+        <e p="LanguageTests.cs" t="Include" />
+        <e p="LanguageTests.csproj" t="IncludeRecursive" />
+        <e p="Nullable" t="Include">
+          <e p="NullOperators.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="LanguageTests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="StringList.cs" t="Include" />
+        <e p="Types" t="Include">
+          <e p="TypeTests.cs" t="Include" />
+        </e>
+        <e p="UnitTest1.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

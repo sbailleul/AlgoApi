@@ -1,22 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
+using AlgoApi.Core.CostCalculating;
 using AlgoApi.Core.NodeHandling;
-using AlgoApi.Core.PathFinding.Interfaces;
 using AlgoApi.Models.Graph;
 
 namespace AlgoApi.Core.PathFinding
 {
-    public class Dijkstra : PathFinder, IDijkstra
+    public class Dijkstra : PathFinder
     {
-        protected override INodeHandler NodeHandler { get; set; } = new GraphNodeHandler();
-        private IGraphCostCalculator CostCalculator { get; set; } = new GraphCostCalculator();
-        
-        public List<int[]> FindShortestPath(int[][] matrix, int[] startVector, int[] endVector)
+        public Dijkstra(GraphNodeHandler nodeHandler, GraphCostCalculator costCalculator) : base(nodeHandler, costCalculator)
+        {
+        }
+
+        public override List<int[]> FindShortestPath(int[][] matrix, int[] startVector, int[] endVector)
         {
             var end = endVector[0];
             Node min;
-            NodeHandler.InitNodes(out var doneNodes,out var nodes, matrix);
+            NodeHandler.InitNodes(out var doneNodes, out var nodes, matrix);
             NodeHandler.SetStartNode(nodes, startVector);
             do
             {
@@ -28,9 +27,5 @@ namespace AlgoApi.Core.PathFinding
 
             return NodeHandler.GetShortestPath(doneNodes, startVector, endVector);
         }
-
-
-  
-        
     }
 }

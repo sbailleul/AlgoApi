@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace AlgoApi.Core.Sorting.NeighbourTesting
+﻿namespace AlgoApi.Core.Sorting.NeighbourTesting
 {
-    public class CrossNeighbourTester : INeighbourTestter
+    public class CrossNeighbourTester : INeighbourTester
     {
         public bool AreNeighbours(int[] el1, int[] el2)
         {

@@ -18,8 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Core\Builders" />
       <Folder Include="Core\ReferenceHandling" />
-      <Folder Include="Core\TemperatureHandling" />
     </ItemGroup>
 
 </Project>

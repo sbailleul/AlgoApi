@@ -5,6 +5,5 @@ namespace AlgoApi.Test.Core
     [TestFixture]
     public class CostCalculator
     {
-        
     }
 }
