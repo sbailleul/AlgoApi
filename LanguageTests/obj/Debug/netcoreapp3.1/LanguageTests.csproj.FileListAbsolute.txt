@@ -91,3 +91,7 @@ C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\LanguageT
 C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\LanguageTests\obj\Debug\netcoreapp3.1\LanguageTests.csproj.CopyComplete
 C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\LanguageTests\obj\Debug\netcoreapp3.1\LanguageTests.dll
 C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\LanguageTests\obj\Debug\netcoreapp3.1\LanguageTests.pdb
+C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\LanguageTests\bin\Debug\netcoreapp3.1\AlgoApi.Core.dll
+C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\LanguageTests\bin\Debug\netcoreapp3.1\AlgoApi.Data.dll
+C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\LanguageTests\bin\Debug\netcoreapp3.1\AlgoApi.Core.pdb
+C:\Users\baill\OneDrive\Documents\Entrainement\3. C#\0. WebAPI\AlgoApi\LanguageTests\bin\Debug\netcoreapp3.1\AlgoApi.Data.pdb

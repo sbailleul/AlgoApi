@@ -15,7 +15,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Core\\AlgoApi.Core.csproj": {
+            "projectPath": "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Core\\AlgoApi.Core.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

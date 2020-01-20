@@ -1438,6 +1438,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "AlgoApi.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AlgoApi.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AlgoApi.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AlgoApi.Core.dll": {}
+        }
+      },
+      "AlgoApi.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/AlgoApi.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AlgoApi.Data.dll": {}
+        }
       }
     }
   },
@@ -5256,10 +5279,21 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "AlgoApi.Core/1.0.0": {
+      "type": "project",
+      "path": "../AlgoApi.Core/AlgoApi.Core.csproj",
+      "msbuildProject": "../AlgoApi.Core/AlgoApi.Core.csproj"
+    },
+    "AlgoApi.Data/1.0.0": {
+      "type": "project",
+      "path": "../AlgoApi.Data/AlgoApi.Data.csproj",
+      "msbuildProject": "../AlgoApi.Data/AlgoApi.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AlgoApi.Core >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
       "NUnit3TestAdapter >= 3.15.1",
       "nunit >= 3.12.0"
@@ -5290,7 +5324,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Core\\AlgoApi.Core.csproj": {
+              "projectPath": "C:\\Users\\baill\\OneDrive\\Documents\\Entrainement\\3. C#\\0. WebAPI\\AlgoApi\\AlgoApi.Core\\AlgoApi.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
